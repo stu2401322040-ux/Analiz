@@ -1,0 +1,243 @@
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="use-case" name="Use Case диаграма">
+    <mxGraphModel dx="1000" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="900" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="sys" value="Система за резервации на маси" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7f9f8;strokeColor=#1a1a1a;strokeWidth=1.5;verticalAlign=top;fontStyle=1;fontSize=17;spacingTop=14;" vertex="1" parent="1">
+          <mxGeometry x="270" y="30" width="460" height="840" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc1" value="Запазване на маса" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1a1a1a;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="340" y="106" width="320" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc7" value="Проверка за свободна маса" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1a1a1a;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="340" y="211" width="320" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc2" value="Промяна на резервация" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1a1a1a;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="340" y="316" width="320" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc3" value="Отказване на резервация" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1a1a1a;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="340" y="421" width="320" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc4" value="Преглед на резервациите за деня" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1a1a1a;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="340" y="531" width="320" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc5" value="Потвърждаване на резервация" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1a1a1a;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="340" y="636" width="320" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc6" value="Управление на масите" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1a1a1a;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="340" y="741" width="320" height="68" as="geometry"/>
+        </mxCell>
+        <mxCell id="client" value="Клиент" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontStyle=1;fontSize=15;fillColor=#ffffff;strokeColor=#1a1a1a;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="100" y="205" width="70" height="138" as="geometry"/>
+        </mxCell>
+        <mxCell id="staff" value="Служител" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontStyle=1;fontSize=15;fillColor=#ffffff;strokeColor=#1a1a1a;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="830" y="420" width="70" height="138" as="geometry"/>
+        </mxCell>
+        <mxCell id="a-c1" style="endArrow=none;html=1;strokeColor=#1a1a1a;exitX=1;exitY=0.41;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="client" target="uc1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a-c2" style="endArrow=none;html=1;strokeColor=#1a1a1a;exitX=1;exitY=0.41;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="client" target="uc2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a-c3" style="endArrow=none;html=1;strokeColor=#1a1a1a;exitX=1;exitY=0.41;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="client" target="uc3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a-s1" style="endArrow=none;html=1;strokeColor=#1a1a1a;exitX=0;exitY=0.41;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="staff" target="uc1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a-s2" style="endArrow=none;html=1;strokeColor=#1a1a1a;exitX=0;exitY=0.41;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="staff" target="uc2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a-s3" style="endArrow=none;html=1;strokeColor=#1a1a1a;exitX=0;exitY=0.41;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="staff" target="uc3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a-s4" style="endArrow=none;html=1;strokeColor=#1a1a1a;exitX=0;exitY=0.41;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="staff" target="uc4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a-s5" style="endArrow=none;html=1;strokeColor=#1a1a1a;exitX=0;exitY=0.41;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="staff" target="uc5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a-s6" style="endArrow=none;html=1;strokeColor=#1a1a1a;exitX=0;exitY=0.41;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="staff" target="uc6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="inc1" value="«include»" style="endArrow=open;endSize=12;dashed=1;html=1;strokeColor=#1a1a1a;fontSize=13;labelBackgroundColor=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uc1" target="uc7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="42" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inc2" value="«include»" style="endArrow=open;endSize=12;dashed=1;html=1;strokeColor=#1a1a1a;fontSize=13;labelBackgroundColor=none;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="uc2" target="uc7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="42" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="class-diagram" name="Клас диаграма">
+    <mxGraphModel dx="1110" dy="800" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1110" pageHeight="800" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="restaurant" value="Restaurant" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#eef2ef;swimlaneFillColor=#ffffff;strokeColor=#1a1a1a;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="280" height="155" as="geometry"/>
+        </mxCell>
+        <mxCell id="restaurant-attrs" value="- name : String&lt;br&gt;- address : String&lt;br&gt;- openingTime : LocalTime&lt;br&gt;- lastReservationTime : LocalTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="restaurant">
+          <mxGeometry y="32" width="280" height="86" as="geometry"/>
+        </mxCell>
+        <mxCell id="restaurant-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="restaurant">
+          <mxGeometry y="118" width="280" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="restaurant-ops" value="+ getTables() : List&amp;lt;RestaurantTable&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="restaurant">
+          <mxGeometry y="126" width="280" height="29" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="table" value="RestaurantTable" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#eef2ef;swimlaneFillColor=#ffffff;strokeColor=#1a1a1a;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="380" width="280" height="136" as="geometry"/>
+        </mxCell>
+        <mxCell id="table-attrs" value="- number : int&lt;br&gt;- capacity : int&lt;br&gt;- active : boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="table">
+          <mxGeometry y="32" width="280" height="67" as="geometry"/>
+        </mxCell>
+        <mxCell id="table-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="table">
+          <mxGeometry y="99" width="280" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="table-ops" value="+ isFreeAt(date, time) : boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="table">
+          <mxGeometry y="107" width="280" height="29" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="reservation" value="Reservation" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#eef2ef;swimlaneFillColor=#ffffff;strokeColor=#1a1a1a;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="440" y="330" width="300" height="250" as="geometry"/>
+        </mxCell>
+        <mxCell id="reservation-attrs" value="- id : int&lt;br&gt;- guestName : String&lt;br&gt;- guestPhone : String&lt;br&gt;- date : LocalDate&lt;br&gt;- time : LocalTime&lt;br&gt;- guests : int&lt;br&gt;- status : ReservationStatus" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="reservation">
+          <mxGeometry y="32" width="300" height="143" as="geometry"/>
+        </mxCell>
+        <mxCell id="reservation-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="reservation">
+          <mxGeometry y="175" width="300" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="reservation-ops" value="+ confirm() : void&lt;br&gt;+ cancel() : void&lt;br&gt;+ change(date, time, guests) : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="reservation">
+          <mxGeometry y="183" width="300" height="67" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="user" value="User" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#eef2ef;swimlaneFillColor=#ffffff;strokeColor=#1a1a1a;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="820" y="40" width="250" height="174" as="geometry"/>
+        </mxCell>
+        <mxCell id="user-attrs" value="- id : int&lt;br&gt;- name : String&lt;br&gt;- phone : String&lt;br&gt;- email : String&lt;br&gt;- role : Role" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="user">
+          <mxGeometry y="32" width="250" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="user-line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="user">
+          <mxGeometry y="137" width="250" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="user-ops" value="+ hasRole(role) : boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="user">
+          <mxGeometry y="145" width="250" height="29" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="status" value="&lt;i&gt;«enumeration»&lt;/i&gt;&lt;br&gt;&lt;b&gt;ReservationStatus&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=44;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#eef2ef;swimlaneFillColor=#ffffff;strokeColor=#1a1a1a;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="440" y="650" width="300" height="111" as="geometry"/>
+        </mxCell>
+        <mxCell id="status-values" value="PENDING (очаква потвърждение)&lt;br&gt;CONFIRMED (потвърдена)&lt;br&gt;CANCELLED (отказана)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="status">
+          <mxGeometry y="44" width="300" height="67" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="role" value="&lt;i&gt;«enumeration»&lt;/i&gt;&lt;br&gt;&lt;b&gt;Role&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=44;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#eef2ef;swimlaneFillColor=#ffffff;strokeColor=#1a1a1a;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="820" y="650" width="250" height="92" as="geometry"/>
+        </mxCell>
+        <mxCell id="role-values" value="CLIENT (Клиент)&lt;br&gt;STAFF (Служител)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=4;spacingTop=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="role">
+          <mxGeometry y="44" width="250" height="48" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="composition" style="endArrow=none;html=1;strokeColor=#1a1a1a;startArrow=diamondThin;startFill=1;startSize=16;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="restaurant" target="table">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="composition-src" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;fontSize=13;labelBackgroundColor=none;" connectable="0" vertex="1" parent="composition">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="10" y="24" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="composition-name" value="съдържа" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=middle;fontSize=13;fontStyle=2;labelBackgroundColor=none;" connectable="0" vertex="1" parent="composition">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="10" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="composition-dst" value="1..*" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=13;labelBackgroundColor=none;" connectable="0" vertex="1" parent="composition">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="10" y="-6" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="has" style="endArrow=none;html=1;strokeColor=#1a1a1a;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.472;entryDx=0;entryDy=0;" edge="1" parent="1" source="table" target="reservation">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="has-src" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=13;labelBackgroundColor=none;" connectable="0" vertex="1" parent="has">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="8" y="-4" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="has-name" value="има" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=top;fontSize=13;fontStyle=2;labelBackgroundColor=none;" connectable="0" vertex="1" parent="has">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="6" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="has-dst" value="0..*" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;fontSize=13;labelBackgroundColor=none;" connectable="0" vertex="1" parent="has">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="-8" y="-4" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="creates" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=none;html=1;strokeColor=#1a1a1a;exitX=0.24;exitY=1;exitDx=0;exitDy=0;entryX=0.6;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="user" target="reservation">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="265"/>
+              <mxPoint x="620" y="265"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="creates-src" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;fontSize=13;labelBackgroundColor=none;" connectable="0" vertex="1" parent="creates">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="8" y="6" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="creates-name" value="създава" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=bottom;fontSize=13;fontStyle=2;labelBackgroundColor=none;" connectable="0" vertex="1" parent="creates">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="-4" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="creates-dst" value="0..*" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=13;labelBackgroundColor=none;" connectable="0" vertex="1" parent="creates">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="8" y="-4" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="confirms" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=none;html=1;strokeColor=#1a1a1a;exitX=0.64;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.32;entryDx=0;entryDy=0;" edge="1" parent="1" source="user" target="reservation">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="980" y="410"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="confirms-src" value="0..1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;fontSize=13;labelBackgroundColor=none;" connectable="0" vertex="1" parent="confirms">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="8" y="6" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="confirms-name" value="потвърждава" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=bottom;fontSize=13;fontStyle=2;labelBackgroundColor=none;" connectable="0" vertex="1" parent="confirms">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="120" y="-4" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="confirms-dst" value="0..*" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=13;labelBackgroundColor=none;" connectable="0" vertex="1" parent="confirms">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="8" y="-4" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="uses-role" style="endArrow=open;endSize=12;dashed=1;html=1;strokeColor=#1a1a1a;exitX=0.88;exitY=1;exitDx=0;exitDy=0;entryX=0.88;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="user" target="role">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="uses-status" style="endArrow=open;endSize=12;dashed=1;html=1;strokeColor=#1a1a1a;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="reservation" target="status">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
